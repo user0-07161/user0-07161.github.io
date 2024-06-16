@@ -1,8 +1,81 @@
 <!DOCTYPE html>
 <html>
-  <body>
-    <title>User0's web page</title>
-    <h1>This is empty for now.</h1>
-  </body>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<style>
+body {
+   background: rgb(2,0,36);
+   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); 
+}
+
+h1 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+footer {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+.typewriter h3 {
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em;
+  color: white;
+  animation: 
+    typing 3.5s steps(40, end);
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+.wrapper {
+  position: absolute;
+  right: 0;}
+<script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+  }
+</script>
+</style>
+</head>
+<body>
+  <title>User0's web page</title>
+  <h1>User0's web profile</h1>
+  <div class="typewriter">
+    <h3>
+    Hello! I am User0, a guy who likes to write code. 
+    <br>
+    If you'd like to contact me, you can use the connections below:
+    </h3>
+  </div>
+  <button onclick="openDiscord()" class="button">Discord</button>
+  <button onclick="mailto()" class="button">E-Mail</button>
+  <script>
+  function openDiscord() {
+    window.open("https://discord.gg/9ZGQDTfMtN");
+  }
+  function mailto(){
+    window.open("mailto:user0thenyancat@proton.me");
+  }
+  </script>
+  <div class="wrapper">
+    <iframe id="nyancat" src="nyancat.html" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
+  </div>
+</body>
+<br>
+<br>
+<footer>
+  This website is not finished yet.
+  <br>
+  Thanks to all online-tutorial-websites/forums who helped me 🥴
+  <br>
+  Some are:
+  <br>
+  stackoverflow, w3schools, etc. pp.
+  <br>
+  Note: I do not own any of these, neither am I associated with 'em.
+</footer>
 </html>
 
