@@ -2,8 +2,75 @@ body {
   background: rgb(2, 0, 36);
   overflow: hidden;
 }
-
+.carmelo {
+  background-color: #00b894;
+  border: 8px solid #117b63;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: transform 2s;  
+}
+.carmelo:hover {
+  transition: .1s;
+  transform: translateY(-1px);
+  transform: perspective(200px) rotateX(40deg);
+}
+.winbo {
+  background-color: yellow;
+  border: 8px solid #8B8000;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: transform 2s;
+}
+.winbo:hover {
+  transition: .1s;
+  transform: translateY(-1px);
+  transform: perspective(200px) rotateX(40deg);
+}
+.eryquicc {
+  background-color: #117b63;
+  border: 8px solid #0b4e3f;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: transform 2s;
+}
+.eryquicc:hover {
+  transition: .1s;
+  transform: translateY(-1px);
+  transform: perspective(200px) rotateX(40deg);
+}
+.steeldev{
+  background-color: blue;
+  border: 8px solid darkblue;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: transform 2s;
+}
+.steeldev:hover{
+  transition: .1s;
+  transform: translateY(-10px);
+  transform: perspective(200px) rotateX(40deg);
+}
 h1 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+h2 {
   color: white;
   font-family: 'Roboto', sans-serif;
 }
@@ -11,6 +78,17 @@ h1 {
 bold {
   color: white;
   font-family: 'Roboto', sans-serif;
+}
+
+.square {
+  background: rgb(9,9,121);
+  background: linear-gradient(90deg, rgba(9,9,121,1) 35%, rgba(2,0,36,1) 51%, rgba(0,212,255,1) 100%);
+  width: 75vw;
+  height: 10vw;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 footer {

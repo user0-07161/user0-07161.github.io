@@ -1,11 +1,6 @@
-function openDiscord() {
-    window.open("https://discord.gg/9ZGQDTfMtN");
+function newtab(url) {
+    window.open(url);
 }
-
-function mailto(){
-    window.open("mailto:user0thenyancat@proton.me");
-}
-
 function resizeIframe(obj) {
     obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
 }
