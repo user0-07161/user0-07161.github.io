@@ -1,31 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
 <head>
-  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css.css">
-</head>
-
-<body>
-  <title>User0's web page</title>
-  <meta content="User0's web profile" property="og:title" />
-  <meta content="Some informations about me" property="og:description" />
-  <meta content="https://user0.is-a.dev" property="og:url" />
-  <meta content="https://www.nyan.cat/cats/original.gif" property="og:image" />
-  <meta content="#00008b" data-react-helmet="true" name="theme-color" />
-  <link rel="icon" type="image/x-icon" href="https://www.nyan.cat/cats/original.gif">
-  <h1 id="big-typing">
-    User0's web profile
-  </h1>
-  <bold>
-    Hello! I am user0, a guy who likes to write code.
-  </bold>
-  <br>
-  <bold>
-    If you would like to contact me, use the buttons below:
-  </bold>
-  <p id="typing-text"></p>
-  <script src="script.js"></script>
+    <title>User0's website</title>
+    <meta content="User0's website" property="og:title" />
+    <meta content="Some information about me" property="og:description" />
+    <meta content="https://user0.is-a.dev" property="og:url" />
+    <meta content="https://www.nyan.cat/cats/original.gif" property="og:image" />
+    <meta content="#00008b" data-react-helmet="true" name="theme-color" />
+    <link rel="icon" type="image/x-icon" href="https://www.nyan.cat/cats/original.gif">
+    <link rel="stylesheet" href="css.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #e0e0e0;
+            text-align: center;
+        }
+    
+        .topbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            z-index: 100;
+            box-sizing: border-box;
+        }
+    
+        .topbar img {
+            height: 40px;
+            margin-right: 15px;
+        }
+    
+        .topbar h1 {
+            font-size: 26px;
+            margin: 0;
+            color: #e0e0e0;
+        }
+    
+        .topbar .buttons {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+        }
+    
+        .topbar .button {
+            background-color: #0078d7;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-left: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+    
+        .topbar .button:hover {
+            background-color: #005a9e;
+            transform: scale(1.05);
+        }
+    
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            color: #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            margin: 20px auto;
+            max-width: 600px;
+            max-height: 300px;
+            overflow: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);   
+            
+        .content h2 {
+                color: #80c0ff;
+            }
+        }
+    </style>
   <div class="toaster t1 p6"></div>
   <div class="toaster t3 p7"></div>
   <div class="toast tst1 p8"></div>
@@ -47,64 +117,23 @@
   <div class="toaster t2 p31"></div>
   <div class="toaster t1 p32"></div>
   <div class="toast tst3 p33"></div>
-  <button onclick="newtab('https\://discord.com/invite/f9XCDce2Uj')" class="button"><img src="https://dcbadge.limes.pink/api/server/https://discord.com/invite/f9XCDce2Uj"/></button>
-  <button onclick="newtab('mailto\:user0thenyancat@proton.me')" class="button"><img src="https://img.shields.io/badge/proton%20mail-6D4AFF?style=for-the-badge&logo=protonmail&logoColor=white"/></button>
-  <div class="wrapper">
-    <iframe id="nyancat" src="nyancat.html" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
-  </div>
-  <h2>
-    Friends
-  </h2>
-  <button onclick="newtab('https\://canavan.is-a.dev')" class="carmelo">
-      ninja_5000
-      <br>
-      <small>"Potato"</small>
-  </button>
-  &nbsp;
-  <button onclick="newtab('https\://winbo-yml-exe.github.io/')" class="winbo">
-      Winbo
-      <br>
-      <small>"yet another dev"</small>
-  </button>
-  &nbsp;
-  <button onclick="alert('Steeldev doesn\'t have an web profile yet')" class="steeldev">
-      SteelDev
-      <br>
-      <small>"im just a curios person with a laptop"</small>
-  </button>
-  &nbsp;
-  <button onclick="newtab('https\://eryquicc.is-a.dev')" class="eryquicc">
-      Eryquicc
-      <br>
-      <small>"water"</small>
-  </button>
-  <br>
-  &nbsp;
-  <br>
-  <button onclick="newtab('https\://rediblesky.is-a.dev')" class="rediblesky">
-      RedibleSky
-      <br>
-      <small>"a robot flying on the space"</small>
-  </button>
-  &nbsp;
-  <button onclick="newtab('https\://orcapet.is-a.dev')" class="orcapet">
-      Orca Pet
-      <br>
-      <small>"an orca that codes stuff"</small>
-  </button>
-  &nbsp;
-  <button onclick="newtab('https\://pi19044.is-a.dev')" class="pi">
-      pi19044
-      <br>
-      <small>"just some random dev"</small>
-  </button>
-</body>
-<br>
-<br>
-<footer>
-  This website is not finished yet.
-  <br>
-  Thanks to Carmelo Canavan (ninja_5000) for the typing animation, also, thanks to Tech-FZ for making the code more readable.
-</footer>
+</head>
+<body>
+    <div class="topbar">
+        <img src="img/profile.png" alt="Profile Image">
+        <h1>User0's website</h1>
+        <div class="buttons">
+            <a class="button" href="friends/">Friends</a>
+            <a class="button" href="https://discord.gg/JAzQx4KVG3">Discord</a>
+            <a class="button" href="https://github.com/user0-07161">GitHub</a>
+        </div>
+    </div>
 
+    <div class="content">
+        <section>
+            <h2>About Me</h2>
+            <p><img src=img/hmmidk.png></img></p>
+        </section>
+    </div>
+</body>
 </html>
