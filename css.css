@@ -163,6 +163,22 @@ a:active {
   transform: perspective(200px) rotateX(360deg);
   opacity: 0.2;
 }
+.calibrato {
+  background-color: #000000;
+  border: 8px solid #000000;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: transform 2s, opacity 2s ease-in-out;
+  border-radius: 8px;
+}
+.calibrato:hover{
+  transform: perspective(200px) rotateX(360deg);
+  opacity: 0.2;
+}
 .topbar {
   position: fixed;
   top: 0;
