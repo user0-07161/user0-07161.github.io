@@ -163,9 +163,9 @@ a:active {
   transform: perspective(200px) rotateX(360deg);
   opacity: 0.2;
 }
-.calibrato {
-  background-color: #000000;
-  border: 8px solid #000000;
+.calibrato{
+  background-color: black;
+  border: 8px solid black;
   color: white;
   padding: 15px 32px;
   text-align: center;
