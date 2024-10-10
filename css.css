@@ -1,7 +1,40 @@
 body {
   background-image: url(bg.png);
+  background-size: cover;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #e0e0e0;
+  text-align: center;
 }
+
+a {
+  display: inline-block;
+  transition: transform 2s ease-in-out, opacity 2s ease-in-out;
+}
+
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  transform: perspective(200px) rotateX(720deg);
+  opacity: 0.5;
+}
+
+a:active {
+  transform: perspective(200px) rotateX(720deg);
+}
+
 .carmelo {
   background-color: #00b894;
   border: 8px solid #117b63;
@@ -11,12 +44,12 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  transition: transform 2s;  
+  transition: transform 2s, opacity 2s ease-in-out;
+  border-radius: 8px;
 }
 .carmelo:hover {
-  transition: .1s;
-  transform: translateY(-1px);
-  transform: perspective(200px) rotateX(40deg);
+  transform: perspective(200px) rotateX(360deg);
+  opacity: 0.2;
 }
 .pi {
   background-color: #930e00;
@@ -27,12 +60,12 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  transition: transform 2s;  
+  transition: transform 2s, opacity 2s ease-in-out;
+  border-radius: 8px;
 }
 .pi:hover {
-  transition: .1s;
-  transform: translateY(-1px);
-  transform: perspective(200px) rotateX(40deg);
+  transform: perspective(200px) rotateX(360deg);
+  opacity: 0.2;
 }
 .rediblesky {
   background-color: #fd6a6b;
@@ -43,12 +76,12 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  transition: transform 2s;  
+  transition: transform 2s, opacity 2s ease-in-out;
+  border-radius: 8px;
 }
 .rediblesky:hover {
-  transition: .1s;
-  transform: translateY(-1px);
-  transform: perspective(200px) rotateX(40deg);
+  transform: perspective(200px) rotateX(360deg);
+  opacity: 0.2;
 }
 .orcapet {
   background-color: #afafaf;
@@ -59,12 +92,12 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  transition: transform 2s;  
+  transition: transform 2s, opacity 2s ease-in-out;
+  border-radius: 8px;
 }
 .orcapet:hover {
-  transition: .1s;
-  transform: translateY(-1px);
-  transform: perspective(200px) rotateX(40deg);
+  transform: perspective(200px) rotateX(360deg);
+  opacity: 0.2;
 }
 .winbo {
   background-color: yellow;
@@ -75,12 +108,12 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  transition: transform 2s;
+  transition: transform 2s, opacity 2s ease-in-out;
+  border-radius: 8px;
 }
 .winbo:hover {
-  transition: .1s;
-  transform: translateY(-1px);
-  transform: perspective(200px) rotateX(40deg);
+  transform: perspective(200px) rotateX(360deg);
+  opacity: 0.2;
 }
 .eryquicc {
   background-color: #117b63;
@@ -92,11 +125,11 @@ body {
   display: inline-block;
   font-size: 16px;
   transition: transform 2s;
+  border-radius: 8px;
 }
 .eryquicc:hover {
-  transition: .1s;
-  transform: translateY(-1px);
-  transform: perspective(200px) rotateX(40deg);
+  transform: perspective(200px) rotateX(360deg);
+  opacity: 0.2;
 }
 .steeldev{
   background-color: blue;
@@ -107,12 +140,12 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  transition: transform 2s;
+  transition: transform 2s, opacity 2s ease-in-out;
+  border-radius: 8px;
 }
 .steeldev:hover{
-  transition: .1s;
-  transform: translateY(-10px);
-  transform: perspective(200px) rotateX(40deg);
+  transform: perspective(200px) rotateX(360deg);
+  opacity: 0.2;
 }
 .topbar {
   position: fixed;
@@ -131,9 +164,9 @@ body {
   box-sizing: border-box;
 }
     
-.topbar img {
+.icon {
   height: 40px;
-  margin-right: 15px;
+  margin-right: 32px;
 }
     
 .topbar h1 {
@@ -159,45 +192,39 @@ body {
   text-decoration: none;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
-    
+
+.badge {
+  height: 16px;
+  object-fit: contain;
+}
+
 .topbar .button:hover {
   background-color: #005a9e;
   transform: scale(1.05);
 }
-    
-.content {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   padding: 20px;
-   text-align: center;
-   background: rgba(0, 0, 0, 0.7);
-   color: #e0e0e0;
-   border-radius: 8px;
-   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-   backdrop-filter: blur(10px);
-   margin: auto;
-   max-width: 600px;
-   max-height: 300px;
-   overflow: auto;
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);   
-}
-.content h2 {
-   color: #80c0ff;
-}
 .square {
-  background: rgb(9,9,121);
-  background: linear-gradient(90deg, rgba(9,9,121,1) 35%, rgba(2,0,36,1) 51%, rgba(0,212,255,1) 100%);
-  width: 75vw;
-  height: 18vw;
+  display: flex;
+  padding: 20px;
+  background: linear-gradient(90deg, rgba(9,9,121,0.5) 35%, rgba(2,0,36,0.5) 51%, rgba(0,212,255,0.5) 100%);
   border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: auto;
+  display: flex;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  max-height: 300px;
+}
+.square h2 {
+   color: #80c0ff;
 }
 
 footer {
@@ -511,116 +538,58 @@ footer {
   }
 }
 
-/* Gliding animation using translate */
-/* Moving 1600px, to accomodate for large screens */
 @-webkit-keyframes fly {
-  from {
-    -webkit-transform: translate(0, 0);
-    -moz-transform: translate(0, 0);
-    -o-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
+  0% {
+    top: 0;
+    right: 0;
     transform: translate(0, 0);
   }
-
-  to {
-    -webkit-transform: translate(-1600px, 1600px);
-    -moz-transform: translate(-1600px, 1600px);
-    -o-transform: translate(-1600px, 1600px);
-    -ms-transform: translate(-1600px, 1600px);
-    transform: translate(-1600px, 1600px);
+  100% {
+    top: 100%;
+    right: 100%;
+    transform: translate(-100%, -100%);
   }
 }
+
 
 @-moz-keyframes fly {
-  from {
-    -webkit-transform: translate(0, 0);
-    -moz-transform: translate(0, 0);
-    -o-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
+  0% {
+    top: 0;
+    right: 0;
     transform: translate(0, 0);
   }
-
-  to {
-    -webkit-transform: translate(-1600px, 1600px);
-    -moz-transform: translate(-1600px, 1600px);
-    -o-transform: translate(-1600px, 1600px);
-    -ms-transform: translate(-1600px, 1600px);
-    transform: translate(-1600px, 1600px);
+  100% {
+    top: 100%;
+    right: 100%;
+    transform: translate(-100%, -100%);
   }
 }
+
 
 @-o-keyframes fly {
-  from {
-    -webkit-transform: translate(0, 0);
-    -moz-transform: translate(0, 0);
-    -o-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
+  0% {
+    top: 0;
+    right: 0;
     transform: translate(0, 0);
   }
-
-  to {
-    -webkit-transform: translate(-1600px, 1600px);
-    -moz-transform: translate(-1600px, 1600px);
-    -o-transform: translate(-1600px, 1600px);
-    -ms-transform: translate(-1600px, 1600px);
-    transform: translate(-1600px, 1600px);
+  100% {
+    top: 100%;
+    right: 100%;
+    transform: translate(-100%, -100%);
   }
 }
+
 
 @keyframes fly {
-  from {
-    -webkit-transform: translate(0, 0);
-    -moz-transform: translate(0, 0);
-    -o-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
+  0% {
+    top: 0;
+    right: 0;
     transform: translate(0, 0);
   }
-
-  to {
-    -webkit-transform: translate(-1600px, 1600px);
-    -moz-transform: translate(-1600px, 1600px);
-    -o-transform: translate(-1600px, 1600px);
-    -ms-transform: translate(-1600px, 1600px);
-    transform: translate(-1600px, 1600px);
-  }
-}
-
-.typewriter h3 {
-  font-family: 'Roboto', sans-serif;
-  overflow: hidden;
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: .15em;
-  color: white;
-  animation:
-    typing 3.5s steps(40, end);
-}
-
-.button {
-  background-color: darkblue;
-  border: 8px solid blue;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  transition: transform 250ms;
-}
-
-.button:hover {
-  transition: .5s;
-  transform: translateY(-1px);
-  transform: perspective(200px) rotateX(40deg);
-}
-
-@keyframes typing {
-  from {
-    width: 0
-  }
-
-  to {
-    width: 100%
+  100% {
+    top: 100%;
+    right: 100%;
+    transform: translate(-100%, -100%);
   }
 }
 

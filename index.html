@@ -1,13 +1,13 @@
 <!doctype html>
 <html>
 <head>
-  <title>User0's website</title>
+  <title id="title">User0's website</title>
   <meta content="User0's website" property="og:title" />
   <meta content="Some information about me" property="og:description" />
   <meta content="https://user0.is-a.dev" property="og:url" />
   <meta content="https://www.nyan.cat/cats/original.gif" property="og:image" />
   <meta content="#00008b" data-react-helmet="true" name="theme-color" />
-  <link rel="icon" type="image/x-icon" href="https://www.nyan.cat/cats/original.gif">
+  <link rel="icon" type="image/x-icon" href="img/profile.png">
   <link rel="stylesheet" href="css.css" />
   <div class="toaster t1 p6"></div>
   <div class="toaster t3 p7"></div>
@@ -33,19 +33,23 @@
 </head>
 <body>
     <div class="topbar">
-        <img src="img/profile.png" alt="Profile Image">
-        <h1>User0's website</h1>
+        <img src="img/profile.png" alt="Profile Image" class="icon">
+        <h1><a href="../index.html"> User0's website </a></h1>
         <div class="buttons">
             <a class="button" href="friends/">Friends</a>
-            <a class="button" href="https://discord.gg/JAzQx4KVG3">Discord</a>
-            <a class="button" href="https://github.com/user0-07161">GitHub</a>
+            <a class="button" href="https://discord.gg/JAzQx4KVG3"><img src="https://img.shields.io/badge/Discord-User0's%20Hub-blue.svg" class="badge"></a>
+            <a class="button" href="https://github.com/user0-07161"><img src="https://img.shields.io/badge/GitHub-user0-red.svg" class="badge"></a>
+            <a class="button" href="mailto:user0thenyancat@proton.me"><img src="https://img.shields.io/badge/Mail-user0thenyancat@proton.me-purple.svg" class="badge"></a>
         </div>
     </div>
 
-    <div class="content">
+    <div class="square">
         <section>
             <h2>About Me</h2>
-            <img src=img/hmmidk.png></img>
+            <small>
+                I am user0, a boring person who likes to write code.
+                If you'd like to contact me, use the connections in the top-bar.
+            </small>
         </section>
     </div>
 </body>
