@@ -259,14 +259,13 @@ a:active {
    color: #80c0ff;
 }
 .squarefriends {
-  display: grid | inline-grid;
+  display: grid;
   padding: 20px;
   background: linear-gradient(90deg, rgba(9,9,121,0.5) 35%, rgba(2,0,36,0.5) 51%, rgba(0,212,255,0.5) 100%);
   border-radius: 20px;
   align-items: center;
   justify-content: center;
   overflow: auto;
-  display: flex;
   position: absolute;
   margin: auto;
   top: 0;
@@ -275,7 +274,7 @@ a:active {
   left: 0;
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
+  max-width: 1200px;
   max-height: 300px;
 }
 .squarefriends h2 {
