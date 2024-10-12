@@ -259,7 +259,7 @@ a:active {
    color: #80c0ff;
 }
 .squarefriends {
-  display: grid;
+  display: grid | inline-grid;
   padding: 20px;
   background: linear-gradient(90deg, rgba(9,9,121,0.5) 35%, rgba(2,0,36,0.5) 51%, rgba(0,212,255,0.5) 100%);
   border-radius: 20px;
