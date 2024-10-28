@@ -12,4 +12,4 @@ jobs:
         shell:
           bash
         run:
-          for f in *; do echo ${f}; done;
+          for f in .; do echo ${f}; done;
