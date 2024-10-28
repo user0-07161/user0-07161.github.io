@@ -1,0 +1,15 @@
+name: Deploy static content to Neocities
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy page
+        env:
+          api_key: ${{ secrets.NEOCITIES_API_KEY }}
+        shell:
+          bash
+        run:
+          for f in *; do echo ${f}; done;
