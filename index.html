@@ -4,6 +4,7 @@
 <head>
   <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css.css">
+  <link href="https://fonts.cdnfonts.com/css/terminal" rel="stylesheet">
 </head>
 
 <body>
@@ -14,17 +15,20 @@
   <meta content="https://www.nyan.cat/cats/original.gif" property="og:image" />
   <meta content="#00008b" data-react-helmet="true" name="theme-color" />
   <link rel="icon" type="image/x-icon" href="https://www.nyan.cat/cats/original.gif">
+  <div id="nya">
+    <p id="nyantext"></p>
+  </div>
   <h1 id="big-typing">
-    User0's web profile
+    <a onclick="nya()">U</a>ser0's web profile
   </h1>
   <bold>
-    Hello! I am user0, a guy who likes to write code.
+    Hello! I am <a onclick="nya()">U</a>ser0, a guy who likes to write code.
   </bold>
   <br>
   <bold>
     If you would like to contact me, use the buttons below:
   </bold>
-  <p id="typing-text"></p>
+  <br><br><br>
   <script src="script.js"></script>
   <div class="toaster t1 p6"></div>
   <div class="toaster t3 p7"></div>
@@ -47,7 +51,7 @@
   <div class="toaster t2 p31"></div>
   <div class="toaster t1 p32"></div>
   <div class="toast tst3 p33"></div>
-  <button onclick="newtab('https\://discord.com/invite/f9XCDce2Uj')" class="button"><img src="https://dcbadge.limes.pink/api/server/https://discord.com/invite/f9XCDce2Uj"/></button>
+  <button onclick="newtab('https\://discord.gg/RQsyc3QHGZ')" class="button"><img src="https://dcbadge.limes.pink/api/server/https://discord.gg/RQsyc3QHGZ"/></button>
   <button onclick="newtab('mailto\:user0thenyancat@proton.me')" class="button"><img src="https://img.shields.io/badge/proton%20mail-6D4AFF?style=for-the-badge&logo=protonmail&logoColor=white"/></button>
   <div class="wrapper">
     <iframe id="nyancat" src="nyancat.html" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>

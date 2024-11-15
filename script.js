@@ -1,10 +1,31 @@
+var i = 0;
+var txt = 'Congrats. You\'ve found the secret part of this Website. Now enjoy the Nyan Cat...';
+var speed = 100;
+const imageElement = document.createElement('img');
+var nyancats = ['https://www.nyan.cat/cats/original.gif', 'https://www.nyan.cat/images/thumbs/dub.gif', 'https://www.nyan.cat/images/thumbs/GB.gif', 'https://www.nyan.cat/images/thumbs/nyandoge.gif'];
 function newtab(url) {
     window.open(url);
-}
+};
 function resizeIframe(obj) {
     obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
-}
-
+};
+function nya() {
+    document.getElementById('nya').style.display = "block";
+    document.getElementsByTagName("body")[0].classList.add('hidden');
+    nyantext()
+};
+function nyantext() {
+    const imageElement = document.createElement('img');
+    if (i < txt.length) {
+        document.getElementById("nyantext").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(nyantext, speed);
+    } else {
+        document.getElementById("nyantext").innerHTML = "";
+        imageElement.src = nyancats[Math.floor(Math.random() * nyancats.length)];
+        document.getElementById('nya').appendChild(imageElement);
+    }
+};
 function typingAnimation() {
     document.getElementById('typing-text').classList.remove("noanimation");
     let index = 0;
@@ -28,25 +49,5 @@ function typingAnimation() {
             element.classList.add('slide-in');
         });
     }, 15);
-}
+};
 
-bigTypingAnimation();
-
-function bigTypingAnimation() {
-    document.getElementById('typing-text').classList.add("noanimation");
-    let text = document.getElementById('big-typing').innerHTML;
-    document.getElementById('big-typing').innerHTML = "";
-    let index = 0;
-
-    const bigInterval = setInterval(function() {
-        if (index === text.length) {
-            clearInterval(bigInterval);
-            document.getElementById('big-typing').classList.add("noanimation");
-            setTimeout(typingAnimation, 0);
-            return;
-        }
-
-        document.getElementById('big-typing').innerHTML += text.charAt(index);
-        index++;
-    }, 20);
-}

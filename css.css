@@ -2,6 +2,9 @@ body {
   background: rgb(2, 0, 36);
   overflow: hidden;
 }
+body.hidden > *:not(#nya) {
+  display: none;
+}
 .carmelo {
   background-color: #00b894;
   border: 8px solid #117b63;
@@ -12,6 +15,14 @@ body {
   display: inline-block;
   font-size: 16px;
   transition: transform 2s;  
+}
+#nya {
+  display: none;
+  padding: 20px;
+  background-color: lightblue;
+  border: 1px solid #000;
+  margin-top: 10px;
+  font-family: 'Terminal';
 }
 .carmelo:hover {
   transition: .1s;
