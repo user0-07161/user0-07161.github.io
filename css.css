@@ -61,22 +61,6 @@ body.hidden > *:not(#nya) {
   transform: translateY(-1px);
   transform: perspective(200px) rotateX(40deg);
 }
-.winbo {
-  background-color: yellow;
-  border: 8px solid #8B8000;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  transition: transform 2s;
-}
-.winbo:hover {
-  transition: .1s;
-  transform: translateY(-1px);
-  transform: perspective(200px) rotateX(40deg);
-}
 .eryquicc {
   background-color: #117b63;
   border: 8px solid #0b4e3f;
